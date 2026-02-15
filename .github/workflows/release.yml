@@ -64,9 +64,9 @@ jobs:
           rm "$DOWNLOADED_FILE"
 
 
-          - name: Build with PyInstaller
-          run: |
-            pyinstaller --onefile --name ${{ matrix.bin_name }} --add-data "bin${{ matrix.separator }}bin" --collect-all gradio --collect-all safehttpx --collect-all groovy --collect-all gradio_client web_app.py
+      - name: Build with PyInstaller
+        run: |
+          pyinstaller --onefile --name ${{ matrix.bin_name }} --add-data "bin${{ matrix.separator }}bin" --collect-all gradio --collect-all safehttpx --collect-all groovy --collect-all gradio_client web_app.py
 
 
       - name: Compress Executable
