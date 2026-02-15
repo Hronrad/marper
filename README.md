@@ -13,7 +13,7 @@
 * **可视化操作界面**：内置现代化 Web UI，支持文件拖拽、参数可视化调节，一键输出结果。
 
 ## 快速使用
-前往本仓库的**[Releases page](https://www.google.com/search?q=../../releases)** 页面。
+前往本仓库的 **[Releases page](https://github.com/Hronrad/marp-autosplitter/releases/)** 页面。
 
 根据你的操作系统下载对应的可执行文件（如 Marp-Web-Client-Windows.exe）。
 
@@ -90,7 +90,7 @@ python cli.py report.md -t gaia -l 3 -f pptx html
 
 No coding experience required. Get your presentation in 3 simple steps:
 
-1. Go to the **[Releases page](https://www.google.com/search?q=../../releases)** of this repository.
+1. Go to the **[Releases page](https://github.com/Hronrad/marp-autosplitter/releases/)** of this repository.
 2. Download the standalone executable for your operating system (e.g., `Marp-Web-Client-Windows.exe`).
 3. **Double-click to run**. A modern Web UI will automatically open in your default browser. Upload your `.md` file, tweak the settings, and instantly download your PPTX/PDF!
 
