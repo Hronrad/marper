@@ -171,7 +171,7 @@ async def convert_markdown(
     return output_files 
 
 def main():
-    parser = argparse.ArgumentParser(description="Marp-Autosplitter: Blazing fast Markdown to perfectly paginated PPT")
+    parser = argparse.ArgumentParser(description="Marper: Easy and fast Markdown to perfectly paginated PPT")
     parser.add_argument("input", help="Path to the Markdown file to convert")
     parser.add_argument("-t", "--theme", default="default", help="Select theme (default: default)")
     parser.add_argument("-c", "--class_style", default="", help="Additional CSS class, e.g., lead or invert (default: none)")

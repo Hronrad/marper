@@ -16,20 +16,20 @@ jobs:
       matrix:
         include:
           - os: windows-latest
-            bin_name: Marp-Autosplitter-Client-Windows.exe
-            archive_name: Marp-Autosplitter-Client-Windows.zip
+            bin_name: Marper-Windows.exe
+            archive_name: Marper-Windows.zip
             separator: ';'
             marp_pattern: '*win.zip'
             bin_path: 'bin/windows'
           - os: macos-latest
-            bin_name: Marp-Autosplitter-Client-macOS
-            archive_name: Marp-Autosplitter-Client-macOS.tar.gz
+            bin_name: Marper-macOS
+            archive_name: Marper-macOS.tar.gz
             separator: ':'
             marp_pattern: '*mac.tar.gz'
             bin_path: 'bin/macos'
           - os: ubuntu-latest
-            bin_name: Marp-Autosplitter-Client-Linux
-            archive_name: Marp-Autosplitter-Client-Linux.tar.gz
+            bin_name: Marper-Linux
+            archive_name: Marper-Linux.tar.gz
             separator: ':'
             marp_pattern: '*linux.tar.gz'
             bin_path: 'bin/linux'

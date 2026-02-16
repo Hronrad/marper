@@ -1,7 +1,10 @@
 
-# Marp-Autosplitter
+# Marper
+\# Marp-Autosplitter \| fast PPT generator
 
-**Marp-Autosplitter** 是一个快速、智能的命令行工具，能将任意 Markdown 文档完美转换为排版精美、高度精准的 PPTX 和 PDF 演示文稿。它通过自动切分内容并修复跨页结构，再利用 Marp 转为适合展示的 PPTX 和 PDF 演示文稿。程序确保每一页都美观且信息完整，无论是文本、表格还是 LaTeX 公式，都能得到完美呈现。
+**Marper** 是一个快速、智能的命令行工具，能将任意 Markdown 文档完美转换为排版精美、高度精准的 PPTX 和 PDF 演示文稿。它通过自动切分内容并修复跨页结构，再利用 Marp 转为适合展示的 PPTX 和 PDF 演示文稿。程序确保每一页都美观且信息完整，无论是文本、表格还是 LaTeX 公式，都能得到完美呈现。
+
+**Marper** is a simple, fast, intelligent, and standalone tool designed to flawlessly convert any Markdown document into beautifully formatted, highly precise PPTX and PDF presentations. Powered by a physical-level measurement engine, it automatically paginates lengthy content and smartly repairs cross-page structures. Leveraging Marp under the hood, it ensures every slide is rendered perfectly.
 
 ## 核心特性
 * **零依赖即开即用**：无需安装 Python、Node.js 或任何繁琐环境，下载双击即可运行。
@@ -13,11 +16,11 @@
 * **可视化操作界面**：内置现代化 Web UI，支持文件拖拽、参数可视化调节，一键输出结果。
 
 ## 快速使用
-前往本仓库的 **[Releases page](https://github.com/Hronrad/marp-autosplitter/releases/)** 页面。
+前往本仓库的 **[Releases page](https://github.com/Hronrad/marper/releases/)** 页面。
 
-根据你的操作系统下载对应的可执行文件（如 Marp-Web-Client-Windows.exe）。
+根据你的操作系统下载对应的可执行文件（如 Marp-Web-Client-Windows.exe）。如为压缩包(tar.gz)，请解压后进入文件夹找到可执行文件。
 
-双击运行该程序。一个现代化的 Web 控制台将自动在你的浏览器中打开，上传 Markdown 文件即可一键生成排版完美的 PPTX 和 PDF！
+双击运行该程序。一个现代化的 Web 控制台将自动在你的浏览器中打开，上传 Markdown 文档即可一键生成排版完美的 PPTX 和 PDF！
 
 ## 开发者模式
 
@@ -25,8 +28,8 @@
 
 1. **克隆并进入项目**
 ```bash
-git clone <your-repo-url>
-cd marp-autosplitter
+git clone https://github.com/Hronrad/marper
+cd marper
 ```
 
 2. **安装核心依赖**
@@ -38,7 +41,7 @@ pip install -r requirements.txt
 
 *(注：程序会自动调用本机的 Chrome/Edge，无需额外执行 playwright install)*
 
-## 快速开始
+### 快速开始
 
 基础转换（默认输出 PPTX 和 PDF，使用 `default` 主题）：
 
@@ -63,7 +66,7 @@ python cli.py report.md -t gaia -l 3 -f pptx html
 | `--class_style` | `-c` | 附加的全局 CSS 类（如 `lead` 居中, `invert` 反色暗黑模式） | 空 |
 | `--format` | `-f` | 指定输出格式，多个格式用空格隔开（可选: `pptx`, `pdf`, `html`） | `pptx pdf` |
 
-## 产物输出
+### 产物输出
 
 生成的中间件 `.md` 和最终的 PPT 文件均会自动保存在项目根目录下的 `output_slides` 文件夹中。
 
@@ -74,9 +77,9 @@ python cli.py report.md -t gaia -l 3 -f pptx html
 
 ---
 
-# Marp-Autosplitter (English)
+# Marper
 
-**Marp-Autosplitter** is a blazing-fast, intelligent, and standalone tool designed to flawlessly convert any Markdown document into beautifully formatted, highly precise PPTX and PDF presentations. Powered by a physical-level measurement engine, it automatically paginates lengthy content and smartly repairs cross-page structures. Leveraging Marp under the hood, it ensures every slide is rendered perfectly.
+
 
 ## ✨ Core Features
 
@@ -90,9 +93,9 @@ python cli.py report.md -t gaia -l 3 -f pptx html
 
 No coding experience required. Get your presentation in 3 simple steps:
 
-1. Go to the **[Releases page](https://github.com/Hronrad/marp-autosplitter/releases/)** of this repository.
-2. Download the standalone executable for your operating system (e.g., `Marp-Web-Client-Windows.exe`).
-3. **Double-click to run**. A modern Web UI will automatically open in your default browser. Upload your `.md` file, tweak the settings, and instantly download your PPTX/PDF!
+1. Go to the **[Releases page](https://github.com/Hronrad/marper/releases/)** of this repository.
+2. Download the standalone executable for your operating system (e.g., `Marp-Web-Client-Windows.exe`). If it's a compressed file (like `.tar.gz`), simply extract it and find the executable inside the folder.
+3. **Double-click to run**. A modern Web UI will automatically open in your default browser. Upload or simply paste your `.md` file content, tweak the settings, and instantly download your PPTX/PDF!
 
 ---
 
@@ -102,8 +105,8 @@ If you want to modify the core engine or use the Command Line Interface (CLI) fo
 
 ```bash
 # 1. Clone the repository
-git clone <your-repo-url>
-cd marp-autosplitter
+git clone https://github.com/Hronrad/marper
+cd marper
 
 # 2. Install dev dependencies (Requires Python 3.10+ and Node.js)
 npm install @marp-team/marp-cli
