@@ -1,8 +1,10 @@
+import os
+os.environ["GRADIO_ANALYTICS_ENABLED"] = "False"
 import gradio as gr
 from cli import convert_markdown 
 import tempfile
 import traceback
-import os
+
 
 custom_css = """
 .fixed-file-box {
@@ -65,7 +67,7 @@ with gr.Blocks(title="Marper PPT generator", css=custom_css) as demo:
             tab_text.select(lambda: "text", inputs=None, outputs=input_mode)
 
             theme_in = gr.Dropdown(
-                choices=["default", "gaia", "uncover", "academic", "beam", "rose-pine-dawn", "rose-pine-moon", "rose-pine-dawn-modern"], 
+                choices=["default", "gaia", "uncover", "beam", "rose-pine-dawn", "rose-pine-moon", "rose-pine-dawn-modern"], 
                 value="default", 
                 label="2. 选择主题皮肤 Choose Theme")
             with gr.Accordion("💡 点击查看主题说明 (Theme Details)", open=False):
@@ -76,7 +78,6 @@ with gr.Blocks(title="Marper PPT generator", css=custom_css) as demo:
                             
 ## Community Themes
 (社区主题，请确保同时解压 themes 文件夹和 Marper 程序到同一目录下. Make sure to extract both the themes folder and Marper program to the same directory.)
-- **academic**:  中字体，右对齐。Medium font with red titles. Note: right-aligned; use only when needed. Author: kaisugi.
 - **beam**: 小字体，Beamer 风格。Small font, Beamer-like. Good for academic content. Author: rnd195.
 - **rose-pine-dawn**: 小字体，浅色背景。Small font, light background, gentle style. Author: RAINBOWFLESH.
 - **rose-pine-moon**: 小字体，深色背景。Small font, dark background, elegant for dark themes. Author: RAINBOWFLESH.
