@@ -106,8 +106,6 @@ async def convert_markdown(
     # Clean: remove manual pagination, normalize formulas, clear extra blank lines, fix block sticking
     final_content = re.sub(r'^\s*---\s*$', '', final_content, flags=re.MULTILINE)
     final_content = re.sub(r'([^\n])\n( {0,3}#{1,6}\s)', r'\1\n\n\2', final_content)
-    final_content = re.sub(r'\\\((.*?)\\\)', r'$\1$', final_content)
-    final_content = re.sub(r'\\\[(.*?)\\\]', r'$$\1$$', final_content, flags=re.DOTALL)
     final_content = re.sub(r'\n{3,}', '\n\n', final_content).strip()
 
     print(f"🚀 Launching Two-Pass physical layout engine (Theme: {theme}, Split Level: {heading_split_levels}) ...")
